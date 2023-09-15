@@ -1,5 +1,5 @@
 /**
- *
+ * Sandbox
  */
 
 const fib = (n: number, memo: Record<number, number> = {}): number => {
