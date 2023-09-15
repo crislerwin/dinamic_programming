@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { memoizedFib, fib2 } from "./fib";
+import { fib2, fib3 } from "./fib";
 import { table } from "template-literal-table";
 
 const cases = table`
@@ -13,12 +13,12 @@ ${50}  | ${12586269025}
 describe("Fib", () => {
   describe("Fibonacci", () => {
     it.each(cases)("fib(%s) = %s", ({ input, expectedResult }) => {
-      expect(fib2(input as number)).toEqual(expectedResult);
+      expect(fib3(input as number)).toEqual(expectedResult);
     });
   });
   describe("Memoized Fib", () => {
     it.each(cases)("fib(%s) = %s", ({ input, expectedResult }) => {
-      expect(memoizedFib(input as number)).toEqual(expectedResult);
+      expect(fib2(input as number)).toEqual(expectedResult);
     });
   });
 });

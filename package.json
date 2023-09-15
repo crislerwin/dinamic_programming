@@ -2,6 +2,7 @@
   "name": "dinamic_programming",
   "module": "index.ts",
   "devDependencies": {
+    "benny": "^3.7.1",
     "bun-types": "latest",
     "prettier": "^3.0.3",
     "template-literal-table": "^4.0.0",

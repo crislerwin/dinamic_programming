@@ -1,0 +1,33 @@
+{
+  "name": "Fibonacci",
+  "date": "2023-09-15T02:16:45.525Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Simple Recursive Fib",
+      "ops": 138,
+      "margin": 1.28,
+      "percentSlower": 100
+    },
+    {
+      "name": "Memoized Fib",
+      "ops": 725986,
+      "margin": 0.5,
+      "percentSlower": 98.07
+    },
+    {
+      "name": "Improved Fib",
+      "ops": 37619880,
+      "margin": 5.95,
+      "percentSlower": 0
+    }
+  ],
+  "fastest": {
+    "name": "Improved Fib",
+    "index": 2
+  },
+  "slowest": {
+    "name": "Simple Recursive Fib",
+    "index": 0
+  }
+}
