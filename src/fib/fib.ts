@@ -27,23 +27,23 @@ export const fib3 = (n: number): number => {
   return b;
 };
 
-// bench.suite(
-//   "Fibonacci",
+bench.suite(
+  "Fibonacci",
 
-//   bench.add("Fib Impl 1", () => {
-//     fib(21);
-//   }),
+  bench.add("Fib Impl 1", () => {
+    fib(21);
+  }),
 
-//   bench.add("Fib Impl 2", () => {
-//     fib2(21);
-//   }),
+  bench.add("Fib Impl 2", () => {
+    fib2(21);
+  }),
 
-//   bench.add("Fib Impl 3", () => {
-//     fib3(21);
-//   }),
+  bench.add("Fib Impl 3", () => {
+    fib3(21);
+  }),
 
-//   bench.cycle(),
-//   bench.complete(),
-//   bench.save({ file: "fib", version: "1.0.0" }),
-//   bench.save({ file: "fib", format: "chart.html" })
-// );
+  bench.cycle(),
+  bench.complete(),
+  bench.save({ file: "fib", version: "1.0.0" }),
+  bench.save({ file: "fib", format: "chart.html" })
+);
