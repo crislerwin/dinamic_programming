@@ -1,11 +1,14 @@
 {
   "name": "dinamic_programming",
   "module": "index.ts",
-  "type": "module",
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "prettier": "^3.0.3",
+    "template-literal-table": "^4.0.0",
+    "vitest": "^0.34.4"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "type": "module"
 }
