@@ -1,6 +1,9 @@
 {
   "name": "dinamic_programming",
   "module": "index.ts",
+  "scripts": {
+    "test:watch": "bun test --watch"
+  },
   "devDependencies": {
     "benny": "^3.7.1",
     "bun-types": "latest",
