@@ -4,17 +4,16 @@ import { fib2, fib3, fib } from "./fib";
 b.suite(
   "Fibonacci",
 
-  b.add("Simple Recursive Fib", () => {
-    // Don't run with large numbers, with 21 it takes a long time
-    fib(32);
+  b.add("Fib Impl 1", () => {
+    fib(21);
   }),
 
-  b.add("Memoized Fib", () => {
-    fib2(50);
+  b.add("Fib Impl 2", () => {
+    fib2(21);
   }),
 
-  b.add("Improved Fib", () => {
-    fib3(50);
+  b.add("Fib Impl 3", () => {
+    fib3(21);
   }),
 
   b.cycle(),
