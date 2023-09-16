@@ -1,5 +1,7 @@
 import * as bench from "benny";
 
+// Different ways to do the same thing
+
 interface Fib {
   slugFib(n: number): number;
   carriageFib(n: number, memo: Record<number, number>): number;
