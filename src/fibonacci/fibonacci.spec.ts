@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { fib2, fib3, fib } from "./fib";
+import { carriageFib, rocketFib, slugFib } from "./fibonacci";
 import { table } from "template-literal-table";
 
 const cases = table`
@@ -11,19 +11,19 @@ ${50}  | ${12586269025}
 `;
 
 describe("Fib", () => {
-  describe("Fibonacci", () => {
+  describe("Rocket Fib", () => {
     it.each(cases)(
       "fib($input) = $expectedResult",
       ({ input, expectedResult }) => {
-        expect(fib3(input as number)).toEqual(expectedResult);
+        expect(rocketFib(input as number)).toEqual(expectedResult);
       }
     );
   });
-  describe("Memoized Fib", () => {
+  describe("Carriage Fib", () => {
     it.each(cases)(
       "fib(input) = $expectedResult",
       ({ input, expectedResult }) => {
-        expect(fib2(input as number)).toEqual(expectedResult);
+        expect(carriageFib(input as number)).toEqual(expectedResult);
       }
     );
   });

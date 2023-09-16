@@ -1,0 +1,33 @@
+{
+  "name": "Class Fibonacci",
+  "date": "2023-09-16T15:16:15.138Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "🐛 Slug Fib",
+      "ops": 28071,
+      "margin": 0.83,
+      "percentSlower": 99.96
+    },
+    {
+      "name": "🐴 Carriage Fib",
+      "ops": 1790570,
+      "margin": 0.4,
+      "percentSlower": 97.23
+    },
+    {
+      "name": "🚀 Rocket Fib",
+      "ops": 64713902,
+      "margin": 7.67,
+      "percentSlower": 0
+    }
+  ],
+  "fastest": {
+    "name": "🚀 Rocket Fib",
+    "index": 2
+  },
+  "slowest": {
+    "name": "🐛 Slug Fib",
+    "index": 0
+  }
+}

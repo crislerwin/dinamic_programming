@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-    <title>Functional Fibonacci</title>
+    <title>Class Fibonacci</title>
     <style>
       body {
         margin: 0;
@@ -28,7 +28,7 @@
   </head>
   <body>
     <div class="container">
-      <canvas id="chart1694877358777" width="16" height="9"></canvas>
+      <canvas id="chart1694877375138" width="16" height="9"></canvas>
     </div>
     <script>
       const format = (num) => {
@@ -51,18 +51,18 @@
           chunked.map((chunk) => chunk.join('')).join(' ') + fractionStr
         )
       }
-      const ctx1694877358777 = document
-        .getElementById('chart1694877358777')
+      const ctx1694877375138 = document
+        .getElementById('chart1694877375138')
         .getContext('2d')
-      const chart1694877358777 = new Chart(ctx1694877358777, {
+      const chart1694877375138 = new Chart(ctx1694877375138, {
         type: 'bar',
         data: {
-          labels: ["Fib Impl 1","Fib Impl 2","Fib Impl 3"],
+          labels: ["🐛 Slug Fib","🐴 Carriage Fib","🚀 Rocket Fib"],
           datasets: [
             {
-              data: [29669,1790687,65293353],
-              backgroundColor: ["hsl(0.05999999999999659, 85%, 55%)","hsl(3.287999999999994, 85%, 55%)","hsl(120, 85%, 55%)"],
-              borderColor: ["hsl(0.05999999999999659, 85%, 55%)","hsl(3.287999999999994, 85%, 55%)","hsl(120, 85%, 55%)"],
+              data: [28071,1790570,64713902],
+              backgroundColor: ["hsl(0.0480000000000075, 85%, 55%)","hsl(3.3239999999999954, 85%, 55%)","hsl(120, 85%, 55%)"],
+              borderColor: ["hsl(0.0480000000000075, 85%, 55%)","hsl(3.3239999999999954, 85%, 55%)","hsl(120, 85%, 55%)"],
               borderWidth: 2,
             },
           ],
@@ -72,7 +72,7 @@
           plugins: {
             title: {
               display: true,
-              text: 'Functional Fibonacci',
+              text: 'Class Fibonacci',
               font: { size: 20 },
               padding: 20,
             },
