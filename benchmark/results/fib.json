@@ -1,24 +1,24 @@
 {
   "name": "Functional Fibonacci",
-  "date": "2023-09-16T15:39:43.116Z",
+  "date": "2023-09-16T19:10:08.526Z",
   "version": "1.0.0",
   "results": [
     {
       "name": "Fib Impl 1",
-      "ops": 28633,
-      "margin": 0.51,
+      "ops": 28970,
+      "margin": 0.74,
       "percentSlower": 99.96
     },
     {
       "name": "Fib Impl 2",
-      "ops": 1731114,
-      "margin": 0.38,
-      "percentSlower": 97.54
+      "ops": 1769203,
+      "margin": 0.95,
+      "percentSlower": 97.59
     },
     {
       "name": "Fib Impl 3",
-      "ops": 70488508,
-      "margin": 11.92,
+      "ops": 73358128,
+      "margin": 11.3,
       "percentSlower": 0
     }
   ],
