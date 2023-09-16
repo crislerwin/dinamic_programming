@@ -34,7 +34,7 @@ bun install
 bun test
 ```
 
-### [Fibonacci](./src/fib/README.md)
+### [Fibonacci](./src/fibonacci/README.md)
 
 Fibonacci is a sequence of numbers that starts with 0 and 1, and each subsequent number is the sum of the two previous numbers. So, it goes like this:
 
