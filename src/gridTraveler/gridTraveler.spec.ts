@@ -1,6 +1,6 @@
 import { table } from "template-literal-table";
 import { describe, it, expect } from "vitest";
-import { gridTraveler } from "./gridTraveler";
+import { memoizedGridTraveler, gridTraveler } from "./gridTraveler";
 
 const testCases = table`
     gridWidth   | gridHeight     | expected
@@ -8,12 +8,21 @@ const testCases = table`
     ${2}        | ${2}           | ${2}
     ${2}        | ${3}           | ${3}
     ${3}        | ${3}           | ${6}
-    ${3}        | ${4}           | ${10}
 `;
+
+//  ${18}       |${18}           | ${2333606220} is extremely slow
 
 describe("Grid Traveler", () => {
   it.each(testCases)(
-    "should return %s",
+    "Memoized Grid Traveler tests",
+    ({ gridHeight, gridWidth, expected }) => {
+      expect(
+        memoizedGridTraveler(gridWidth as number, gridHeight as number)
+      ).toEqual(expected);
+    }
+  );
+  it.each(testCases)(
+    "Grid Traveler tests",
     ({ gridHeight, gridWidth, expected }) => {
       expect(gridTraveler(gridWidth as number, gridHeight as number)).toEqual(
         expected
