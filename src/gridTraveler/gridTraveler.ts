@@ -1,8 +1,18 @@
-export const gridTraveler = (gridWidth: number, gridHeight: number): number => {
-  if (gridWidth === 1 && gridHeight === 1) return 1;
-  if (gridWidth === 0 || gridHeight === 0) return 0;
-  return (
-    gridTraveler(gridWidth - 1, gridHeight) +
-    gridTraveler(gridWidth, gridHeight - 1)
-  );
+export const gridTraveler = (m: number, n: number): number => {
+  if (m === 1 && n === 1) return 1;
+  if (m === 0 || n === 0) return 0;
+  return gridTraveler(m - 1, n) + gridTraveler(m, n - 1);
+};
+
+export const memoizedGridTraveler = (
+  m: number,
+  n: number,
+  memo: Record<string, number> = {}
+): number => {
+  const key = m + "," + n;
+  if (key in memo) return memo[key];
+  if (m === 1 && n === 1) return 1;
+  if (m === 0 || n === 0) return 0;
+  memo[key] = memoizedGridTraveler(m - 1, n) + memoizedGridTraveler(m, n - 1);
+  return memo[key];
 };
