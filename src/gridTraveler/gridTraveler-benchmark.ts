@@ -4,10 +4,10 @@ import { gridTraveler, memoizedGridTraveler } from "./gridTraveler";
 bench.suite(
   "GridTraveler",
   bench.add("recursivegridTraveler", () => {
-    gridTraveler(3, 3);
+    gridTraveler(12, 12);
   }),
   bench.add("memoizedgridTraveler", () => {
-    memoizedGridTraveler(3, 3);
+    memoizedGridTraveler(12, 12);
   }),
   bench.cycle(),
   bench.complete(),

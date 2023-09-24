@@ -13,7 +13,7 @@ Tips:
 - implement the tree using recursion
 - test it
 
-\*\*\* 2 - Make it efficient
+2 - Make it efficient
 
 - Add a memo object
 - Add a base case to return memo values

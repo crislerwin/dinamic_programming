@@ -28,7 +28,7 @@
   </head>
   <body>
     <div class="container">
-      <canvas id="chart1695596641860" width="16" height="9"></canvas>
+      <canvas id="chart1695598785795" width="16" height="9"></canvas>
     </div>
     <script>
       const format = (num) => {
@@ -51,18 +51,18 @@
           chunked.map((chunk) => chunk.join('')).join(' ') + fractionStr
         )
       }
-      const ctx1695596641860 = document
-        .getElementById('chart1695596641860')
+      const ctx1695598785795 = document
+        .getElementById('chart1695598785795')
         .getContext('2d')
-      const chart1695596641860 = new Chart(ctx1695596641860, {
+      const chart1695598785795 = new Chart(ctx1695598785795, {
         type: 'bar',
         data: {
           labels: ["recursivegridTraveler","memoizedgridTraveler"],
           datasets: [
             {
-              data: [14909376,1208351],
-              backgroundColor: ["hsl(120, 85%, 55%)","hsl(9.719999999999994, 85%, 55%)"],
-              borderColor: ["hsl(120, 85%, 55%)","hsl(9.719999999999994, 85%, 55%)"],
+              data: [118,46704],
+              backgroundColor: ["hsl(0.3, 85%, 55%)","hsl(120, 85%, 55%)"],
+              borderColor: ["hsl(0.3, 85%, 55%)","hsl(120, 85%, 55%)"],
               borderWidth: 2,
             },
           ],
