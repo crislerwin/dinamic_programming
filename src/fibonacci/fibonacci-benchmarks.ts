@@ -2,7 +2,7 @@ import * as bench from "benny";
 import { carriageFib, rocketFib, slugFib } from "./fibonacci";
 
 bench.suite(
-  "Class Fibonacci",
+  "Fibonacci",
   bench.add("🐛 Slug Fib", () => {
     slugFib(21);
   }),
@@ -15,6 +15,5 @@ bench.suite(
 
   bench.cycle(),
   bench.complete(),
-  bench.save({ file: "fib", version: "1.0.0" }),
-  bench.save({ file: "fib", format: "chart.html" })
+  bench.save({ file: "fib", version: "1.0.0", format: "chart.html" })
 );

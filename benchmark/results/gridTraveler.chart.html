@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-    <title>Fibonacci</title>
+    <title>GridTraveler</title>
     <style>
       body {
         margin: 0;
@@ -28,7 +28,7 @@
   </head>
   <body>
     <div class="container">
-      <canvas id="chart1695596781175" width="16" height="9"></canvas>
+      <canvas id="chart1695596641860" width="16" height="9"></canvas>
     </div>
     <script>
       const format = (num) => {
@@ -51,18 +51,18 @@
           chunked.map((chunk) => chunk.join('')).join(' ') + fractionStr
         )
       }
-      const ctx1695596781175 = document
-        .getElementById('chart1695596781175')
+      const ctx1695596641860 = document
+        .getElementById('chart1695596641860')
         .getContext('2d')
-      const chart1695596781175 = new Chart(ctx1695596781175, {
+      const chart1695596641860 = new Chart(ctx1695596641860, {
         type: 'bar',
         data: {
-          labels: ["🐛 Slug Fib","🐴 Carriage Fib","🚀 Rocket Fib"],
+          labels: ["recursivegridTraveler","memoizedgridTraveler"],
           datasets: [
             {
-              data: [28216,1748439,72175631],
-              backgroundColor: ["hsl(0.0480000000000075, 85%, 55%)","hsl(2.904000000000002, 85%, 55%)","hsl(120, 85%, 55%)"],
-              borderColor: ["hsl(0.0480000000000075, 85%, 55%)","hsl(2.904000000000002, 85%, 55%)","hsl(120, 85%, 55%)"],
+              data: [14909376,1208351],
+              backgroundColor: ["hsl(120, 85%, 55%)","hsl(9.719999999999994, 85%, 55%)"],
+              borderColor: ["hsl(120, 85%, 55%)","hsl(9.719999999999994, 85%, 55%)"],
               borderWidth: 2,
             },
           ],
@@ -72,7 +72,7 @@
           plugins: {
             title: {
               display: true,
-              text: 'Fibonacci',
+              text: 'GridTraveler',
               font: { size: 20 },
               padding: 20,
             },
