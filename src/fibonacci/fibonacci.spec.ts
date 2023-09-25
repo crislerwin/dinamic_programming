@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { carriageFib, rocketFib, slugFib } from "./fibonacci";
+import { carriageFib, rocketFib } from "./fibonacci";
 import { table } from "template-literal-table";
 
 const cases = table`

@@ -12,8 +12,9 @@ bench.suite(
   bench.cycle(),
   bench.complete(),
   bench.save({
-    file: "gridTraveler",
+    file: "gridtraveler_benchmark",
     version: "1.0.0",
+    folder: "src/gridTraveler",
     format: "chart.html",
   })
 );

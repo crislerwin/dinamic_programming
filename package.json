@@ -2,7 +2,8 @@
   "name": "dinamic_programming",
   "module": "index.ts",
   "scripts": {
-    "test:watch": "bun test --watch"
+    "test:watch": "bun test --watch",
+    "start": "bun run index.ts"
   },
   "devDependencies": {
     "benny": "^3.7.1",
@@ -14,5 +15,8 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "elysia": "^0.7.12"
+  }
 }

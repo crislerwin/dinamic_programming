@@ -15,5 +15,10 @@ bench.suite(
 
   bench.cycle(),
   bench.complete(),
-  bench.save({ file: "fib", version: "1.0.0", format: "chart.html" })
+  bench.save({
+    file: "fibonacci_benchmark",
+    version: "1.0.0",
+    folder: "src/fibonacci",
+    format: "chart.html",
+  })
 );
