@@ -1,6 +1,6 @@
 import { table } from "template-literal-table";
 import { describe, expect, it } from "vitest";
-import { canSum } from "./canSum";
+import { canSum, memoizedCanSum } from "./canSum";
 
 const cases = table`
     targetSum | numbers          | expectedResult
@@ -16,6 +16,14 @@ describe("Can Sum", () => {
     "canSum($targetSum, $numbers) = $expectedResult",
     ({ targetSum, numbers, expectedResult }) => {
       expect(canSum(targetSum as number, numbers as number[])).toBe(
+        expectedResult
+      );
+    }
+  );
+  it.each(cases)(
+    "memoizedCanSum($targetSum, $numbers) = $expectedResult",
+    ({ targetSum, numbers, expectedResult }) => {
+      expect(memoizedCanSum(targetSum as number, numbers as number[])).toBe(
         expectedResult
       );
     }
