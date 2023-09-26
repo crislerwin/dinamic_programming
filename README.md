@@ -34,17 +34,20 @@ bun install
 bun test
 ```
 
+## Run on
+
+```
+bun start
+```
+
+### Listen on
+
+<h3><a href="localhost:3000">localhost:3000<a> <h3>
+
+## Problems
+
 ### [Fibonacci](./src/fibonacci/README.md)
 
-Fibonacci is a sequence of numbers that starts with 0 and 1, and each subsequent number is the sum of the two previous numbers. So, it goes like this:
+### [GridTraveler](./src/gridTraveler/README.md)
 
-0, 1, 1, 2, 3, 5, 8, 13, 21, ...
-
-Here's a simple way to understand it:
-
-1. Start with 0 and 1.
-2. Add them together to get the next number: 0 + 1 = 1.
-3. Add the last two numbers in the sequence to get the next one: 1 + 1 = 2.
-4. Keep doing this to get more numbers in the sequence.
-
-So, each number in the Fibonacci sequence is the result of adding the two numbers that came just before it. It's like a number puzzle that keeps growing! The sequence has many interesting properties and applications in mathematics and nature.
+### [Can Sum](./src/canSum/README.md)
