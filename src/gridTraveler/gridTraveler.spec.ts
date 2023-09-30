@@ -1,6 +1,6 @@
-import { table } from "template-literal-table";
-import { describe, it, expect } from "vitest";
-import { memoizedGridTraveler, gridTraveler } from "./gridTraveler";
+import { table } from 'template-literal-table';
+import { describe, it, expect } from 'vitest';
+import { memoizedGridTraveler, gridTraveler } from './gridTraveler';
 
 const testCases = table`
     gridWidth   | gridHeight     | expected
@@ -12,21 +12,21 @@ const testCases = table`
 
 //  ${18}       |${18}           | ${2333606220} is extremely slow
 
-describe("Grid Traveler", () => {
+describe('Grid Traveler', () => {
   it.each(testCases)(
-    "Memoized Grid Traveler tests",
+    'Memoized Grid Traveler tests',
     ({ gridHeight, gridWidth, expected }) => {
       expect(
-        memoizedGridTraveler(gridWidth as number, gridHeight as number)
+        memoizedGridTraveler(gridWidth as number, gridHeight as number),
       ).toEqual(expected);
-    }
+    },
   );
   it.each(testCases)(
-    "Grid Traveler tests",
+    'Grid Traveler tests',
     ({ gridHeight, gridWidth, expected }) => {
       expect(gridTraveler(gridWidth as number, gridHeight as number)).toEqual(
-        expected
+        expected,
       );
-    }
+    },
   );
 });

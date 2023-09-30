@@ -5,7 +5,7 @@ export const slugFib = (n: number): number => {
 
 export const carriageFib = (
   n: number,
-  memo: Record<number, number> = {}
+  memo: Record<number, number> = {},
 ): number => {
   if (n in memo) return memo[n];
   if (n <= 2) return 1;

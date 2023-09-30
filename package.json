@@ -3,7 +3,8 @@
   "module": "index.ts",
   "scripts": {
     "test:watch": "bun test --watch",
-    "start": "bun run index.ts"
+    "start": "bun run index.ts",
+    "format": "prettier --write '**/*.ts'"
   },
   "devDependencies": {
     "benny": "^3.7.1",
