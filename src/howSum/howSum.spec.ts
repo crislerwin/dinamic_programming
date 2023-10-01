@@ -1,6 +1,6 @@
 import { table } from 'template-literal-table';
 import { it, describe, expect } from 'vitest';
-import { howSum } from './howSum';
+import { howSum, memoizedhowsum } from './howSum';
 
 const cases = table`
     targetSum    |  numbers     | expected
@@ -16,6 +16,14 @@ describe('howSum()', () => {
     'howSum(%s, %s) should be %s',
     ({ targetSum, numbers, expected }) => {
       expect(howSum(targetSum as number, numbers as number[])).toEqual(
+        expected,
+      );
+    },
+  );
+  it.each(cases)(
+    'memoizedhowSum(%s, %s) should be %s',
+    ({ targetSum, numbers, expected }) => {
+      expect(memoizedhowsum(targetSum as number, numbers as number[])).toEqual(
         expected,
       );
     },
